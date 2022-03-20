@@ -31,13 +31,13 @@ namespace PlayerControler
         {
             if (dir == Directions.up || dir == Directions.down)
             {
-                float y = Mathf.SmoothStep(start, end, Time.deltaTime / 5);
+                float y = Mathf.SmoothStep(start, end, Time.time / 5);
 
                 transform.position = new Vector2(transform.position.x, y);
             }
             if (dir == Directions.right || dir == Directions.left)
             {
-                float x = Mathf.SmoothStep(start, end, Time.deltaTime / 5);
+                float x = Mathf.SmoothStep(start, end, Time.time / 5);
 
                 transform.position = new Vector2(x, transform.position.y);
             }

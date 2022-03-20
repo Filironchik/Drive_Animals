@@ -25,7 +25,7 @@ public class testplayercontroler : MonoBehaviour
 	void Update()
 	{
 		//Новая позиция по оси Z
-		float _y = Mathf.Lerp(_startPos, _endPos, Time.time);
+		float _y = Mathf.Lerp(_startPos, _endPos, Time.time/5);
 		//Устанавливаем новую позицию
 		transform.position = new Vector2(transform.position.x, _y);
 	}
